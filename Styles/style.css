@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'lemon';
+    src:url(../Font/Lemon-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'oxygen';
+    src:url(../Font/Oxygen-Regular.ttf) format(truetype)
+}
+@font-face {
+    font-family: 'oxygenlight';
+    src:url(../Font/Oxygen-Light.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'oxygenbold';
+    src:url(../Font/Oxygen-Bold.ttf) format(truetype);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../Pictures/Background_multiplecolors.png);
+}
+.grid-container {
+    display: grid;
+    gap: 0px;
+}
+.grid-container > div {
+    text-align: center;
+}
+/************************************************ Header/Navigation Bar ************************************************/
+nav {
+margin: 0%;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #f48f37aa;
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+nav li {
+float: left;
+}
+
+nav li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-family: 'lemon';
+font-size: 130%;
+}
+ul li a:hover{
+opacity:1;
+filter:blur(0);
+text-decoration:none;
+color:rgb(207, 54, 138);
+padding-top: 40px;
+}
+a:active {
+background-color: rgb(19, 190, 3);
+color: white;
+}
+.split {
+float: right;
+margin-right: 2%;
+}
+.logosite {
+    width: 30%;
+}
+/************************************************ A propos ************************************************/
+.firstpicture {
+    grid-area: 1/1/2/4;
+    margin-left:5%;
+    margin-top: 20%;
+}
+.firsttext {
+    grid-area: 1/4/2/7;
+    margin-top: 30%;
+    margin-right: 15%;
+    padding: 10px 10px
+}
+.griddansemeaning {
+    grid-area: 2/1/3/7;
+}
+.textbutton {
+    grid-area: 3/1/4/4;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.secondpicture {
+    grid-area: 3/4/4/7;
+}
+.jointext {
+    grid-area: 4/1/5/7;
+}
+.womandancingpicture, .mandancingpicture {
+    border-radius: 5px;
+}
+.apropos {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h1 {
+    font-family: 'lemon';
+    font-size: 250%;
+    color: rgb(58, 171, 171);
+    text-align: left;
+}
+p {
+    font-family: 'Oxygen';
+    text-align: justify;
+    font-size: 120%;
+    color: white;
+    background-color: rgba(28, 172, 182, 0.568);
+    padding: 5%;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.dansemeaning {
+    font-family: 'lemon';
+    font-size: 110%;
+    background-color: rgb(58, 171, 171);
+    color: white;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+    margin: 5% 3%;
+}
+/************************************************ Button ************************************************/
+.button {
+    background-color: rgb(207, 54, 138);
+    color: white;
+    font-size: 20px;
+    font-family: 'lemon';
+    border: 1px solid rgb(155, 39, 103);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1% 2%;
+}
+.button:hover {
+    background-color: rgb(155, 39, 103);
+}
+.button:active {
+    transform: translateY(4px);
+}
+/************************************************ Cours ************************************************/
+h2 {
+    font-family: 'lemon';
+    font-size: 200%;
+    color: rgb(28, 172, 182);
+    background-color: rgba(255, 255, 255, 0.845);
+    padding-left: 1%;
+}
+/************************************************ Left Navigation ************************************************/
+.aside {
+    grid-area: 1/1/3/2;
+    background-color: rgba(255, 255, 255, 0.845);
+    margin-left: 1%;
+    margin-top: 30%;
+    border-radius: 10px;
+    color:white;
+    text-decoration: none;
+    padding-right: 60px;
+    padding-top:13%;
+    padding-bottom: 5%;
+  }
+.asidestyle {
+    color:rgb(222, 192, 42);
+    text-decoration: none;
+    font-family: 'lemon';
+}
+  div ul li {
+    font-size: 130%;
+    padding: 7%;
+    text-align: center;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.aside a:hover {
+    color: white;
+    transform: scale(0);
+    padding: 0px;
+}
+.videohiphop {
+    grid-area: 2/2/3/7;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 28%;
+    margin-bottom: 5%;
+}
+.hiphop {
+    grid-area: 1/2/2/7;
+    font-size: 105%;
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.videopopping {
+    grid-area: 3/1/4/2;
+    margin-top: 23%;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.popping {
+    grid-area: 3/2/4/7;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.videobreakdance {
+    grid-area: 4/1/5/2;
+    margin-top: 23%;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.breakdance {
+    grid-area: 4/2/5/7;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.videocontemporaine {
+    grid-area: 5/1/6/2;
+    margin-top: 23%;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.contemporaine {
+    grid-area: 5/2/6/7;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.videotango {
+    grid-area: 6/1/7/2;
+    margin-top: 23%;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.tango {
+    grid-area: 6/2/7/7;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.videojive {
+    grid-area: 7/1/8/2;
+    margin-top: 23%;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.jive {
+    grid-area: 7/2/8/7;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.videobachata {
+    grid-area: 8/1/9/2;
+    margin-top: 23%;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+.bachata {
+    grid-area: 8/2/9/7;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/************************************************ Lessons Table ************************************************/
+.tablehoraire {
+    margin-top: 10%;
+}
+table {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+table, th, td {
+    border: 1px solid rgb(207, 54, 138);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    font-family: 'oxygenlight';
+  }
+th, td {
+    border: 1px solid rgb(207, 54, 138);
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+  
+  table th {
+    width: 350px; /* Set a fixed width for each header cell */
+    background-color: rgb(207, 54, 138);
+    color: white;
+    font-family: 'lemon';
+    font-size: 130%;
+  }
+
+  .tableheader td {
+    width: 150px; /* Set a fixed width for each data cell in the header row */
+  }
+  .tablehour {
+    background-color: rgb(207, 54, 138);
+    color: white;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  .tablehourb {
+    background-color: rgb(208, 92, 155);
+    border: 1px solid rgb(208, 92, 155);
+    color: white;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  .tableroom {
+    background-color: rgb(207, 54, 138);
+    color: white;
+    border: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .tableroomb {
+    background-color: rgb(208, 92, 155);
+    color: white;
+    border: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+ .tariftable {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: 2px solid rgb(58, 171, 171);
+ }
+ .tariftable tr {
+    border: 2px solid rgb(58, 171, 171);
+ }
+ .price {
+    background-color: rgb(58, 171, 171);
+    border: 2px solid rgb(58, 171, 171);
+    padding: 20px 30px;
+ }
+ /************************************************ Contact ************************************************/
+.contact {
+    margin-top: 10%;
+}
+h3 {
+    font-family: 'lemon';
+    font-size: 130%;
+    color:rgb(208, 92, 155);
+    margin-left: 2%;
+}
+.coordonees {
+    margin-right: 67%;
+    padding: 15px 15px;
+    text-align: center;
+    font-family: 'oxygenbold';
+}
