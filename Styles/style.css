@@ -71,7 +71,8 @@ float: right;
 margin-right: 2%;
 }
 .logosite {
-    width: 30%;
+    width: 25%;
+    border-radius: 5px;
 }
 /************************************************ A propos ************************************************/
 .firstpicture {
@@ -132,6 +133,14 @@ p {
     padding: 2%;
     text-align: center;
     margin: 5% 3%;
+}
+.fyi {
+    grid-area: 5/2/6/6;
+}
+.fyi p {
+    background-color: #f48f37aa;
+    font-family: 'lemon';
+    color: #994802;
 }
 /************************************************ Button ************************************************/
 .button {
@@ -354,14 +363,29 @@ th, td {
     border: 2px solid rgb(58, 171, 171);
     padding: 20px 30px;
  }
- /************************************************ Contact ************************************************/
+/************************************************ Contact ************************************************/
+.evenement1 {
+    grid-area: 1/1/2/2;
+    margin-top: 20%;
+}
+.postersize {
+    height: 50%;
+}
+.evenement2 {
+    grid-area: 1/2/2/3;
+    margin-top: 20%;
+}
+.evenement3 {
+    grid-area: 1/3/2/4;
+}
+/************************************************ Contact ************************************************/
 .contact {
     margin-top: 10%;
 }
 h3 {
     font-family: 'lemon';
     font-size: 130%;
-    color:rgb(208, 92, 155);
+    color:rgb(228, 40, 143);
     margin-left: 2%;
 }
 .coordonees {
